@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Kumbh Sans";
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  background: linear-gradient(
+    45deg,
+    #fa8bff 0%,
+    #2bd2ff 52%,
+    #2bff88 90%
+  ) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+main {
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+}
+
+.container-grid{
+  display: grid;
+  place-items: center;
+  margin: 3rem 1rem;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .5rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.cardInfo{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.cardImg{
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  bottom: 2rem;
+  right: .75rem;
+}
+
+.searchBox{
+  text-align: center;
+  padding: .75rem 2rem;
+  border-radius: .5rem;
+  border: 2.5px solid black;
+  background-color: white;
+  color: black;
+}
+
+::placeholder{
+  color: rgb(148, 148, 148);
+}
